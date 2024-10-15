@@ -49,6 +49,15 @@ Veja abaixo a demonstração da aplicação:
 
 ![Demonstração](./.github/demo.gif)
 
+## Melhorias Futuras
+Se tivesse mais tempo para trabalhar neste projeto, eu faria as seguintes melhorias:
+
+- Performance: Acredito que caberia implementar uma estratégia de cache e também revisar/melhorar como a estrutura de dados é montada. 
+- Testes Automatizados: Adicionaria uma boa cobertura de testes para garantir a funcionalidade
+- Refinamento Visual: Melhoria alguns pontos visuais para melhorar a experiência do usuário
+- Filtros: Implementaria o filtro de busca pelo nome do ativo.
+- Preview do ativo: Implementaria a tela de preview de um ativo especifico, apesar da tela já exibir um ativo especifico, seria interessante enriquecer essa tela com mais informações.
+
 
 ## Contato
 Se você tiver alguma dúvida ou quiser discutir melhorias, fique à vontade para me contatar pelo [LinkedIn](https://www.linkedin.com/in/guilherme-selair/) ou [email](mailto:contato@guilhermeselair.dev).
