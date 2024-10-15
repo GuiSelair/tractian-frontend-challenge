@@ -1,0 +1,50 @@
+.container {
+	div > div {
+		margin-left: 16px;
+	}
+}
+
+.toggleTreeContainer {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	cursor: pointer;
+	margin: 6px 0;
+	color: #949494;
+
+	&:focus{
+		font-weight: bold;
+	}
+}
+
+.toggleTreeButton {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #17192D;
+	
+	&:focus{
+		font-weight: bold;
+	}
+}
+
+.circleEnergy {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	
+	&[data-status="alert"] {
+		background-color: #ED3833;
+	}
+
+	&[data-status="operating"] {
+		background-color: #52C41A;
+	}
+}
+
+.active {
+	font-weight: bold;
+}

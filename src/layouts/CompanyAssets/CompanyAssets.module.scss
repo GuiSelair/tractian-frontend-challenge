@@ -1,0 +1,95 @@
+.container {
+	margin: 8px;
+	padding: 16px;
+	background: #FFF;
+	border-radius: 4px;
+	height: calc(100vh - 80px);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	> h3 {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 28px;
+		color: #24292F;
+
+		span {
+			color: #77818C;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+		}
+	}
+
+	> div {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+}
+
+.outlineButton {
+	border-radius: 4px;
+	padding: 6px 16px;
+	gap: 8px;
+	display: flex;
+	align-items: center;
+	border: 1px solid #D8DFE6;
+	color: #77818C;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all 0.2s;
+
+	> svg {
+		color: #2188FF
+	}
+
+	&:hover {
+		border-color: #a3a8ad;
+	}
+
+	&.active {
+		background-color: #2188FF;
+		color: #FFF;
+
+		> svg {
+			color: #FFF;
+		}
+	}
+}
+
+.contentContainer {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 16px;
+	height: 90%;
+}
+
+.sectionContainer {
+	border: 1px solid #D8DFE6;
+	width: 480px;
+	min-width: 280px;
+	max-width: 580px;
+	height: 100%;
+	resize: horizontal;
+	overflow:auto;
+
+	.filterField {
+		width: 100%;
+	}
+}
+
+.assetContainer {
+	border: 1px solid #D8DFE6;
+	flex: 1;
+	height: 100%;
+}
+
+.viewTreeContainer {
+	margin: 16px 8px;
+}
