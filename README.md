@@ -41,7 +41,7 @@ npm install
 ```
 npm run dev
 ```
-4. Acessa a aplicação em http://localhost:3000
+4. Acessa a aplicação em http://localhost:5173
 
 ## Demonstração
 
