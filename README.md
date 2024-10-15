@@ -43,5 +43,12 @@ npm run dev
 ```
 4. Acessa a aplicação em http://localhost:3000
 
+## Demonstração
+
+Veja abaixo a demonstração da aplicação:
+
+![Demonstração](./.github/demo.gif)
+
+
 ## Contato
 Se você tiver alguma dúvida ou quiser discutir melhorias, fique à vontade para me contatar pelo [LinkedIn](https://www.linkedin.com/in/guilherme-selair/) ou [email](mailto:contato@guilhermeselair.dev).

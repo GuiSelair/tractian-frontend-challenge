@@ -35,7 +35,7 @@ export function CompanyAssetsLayout() {
 			<>
 				<Header companies={companies} />
 				<div className={styles.container}>
-					<span>Selecione um empresa para visualizar seus ativos</span>
+					<span>Selecione uma empresa para visualizar seus ativos</span>
 				</div>
 			</>
 		)
