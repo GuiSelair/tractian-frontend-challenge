@@ -80,6 +80,7 @@ export function CompanyAssetsLayout() {
 							type="text" 
 							placeholder="Buscar Ativo ou Local"
 							className={styles.filterField}
+							disabled
 						/>
 						<div className={styles.viewTreeContainer}>
 							{[...treeData].map(([,node]) => (

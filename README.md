@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Tractian Front End Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição do Projeto
 
-Currently, two official plugins are available:
+Este projeto implementa uma **árvore hierárquica** que representa os **assets** (ativos), **componentes** e **localizações** de uma empresa. A aplicação permite que os usuários naveguem e filtrem essa árvore de forma dinâmica, visualizando informações importantes como sensores de energia e status críticos dos componentes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A aplicação foi construída utilizando React com CSS modules. O foco principal foi na **usabilidade** e **performance**, conforme os critérios estabelecidos no desafio.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Visualização da Árvore de Assets**
+   - A árvore exibe localizações, assets e componentes de maneira hierárquica, como definido no desafio.
+   - Ícones específicos são usados para identificar assets, localizações e componentes.
+	 - A árvore de elementos é totalmente manipulavel pelo teclado.
 
-- Configure the top-level `parserOptions` property like this:
+2. **Filtros**
+   - **Sensores de Energia**: Filtro que exibe apenas os componentes com sensores de energia.
+   - **Status Crítico**: Filtro para mostrar assets que possuem componentes com status crítico.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+3. **Manutenção da Hierarquia**
+   - Mesmo com filtros aplicados, a hierarquia completa dos assets não é quebrada, permitindo que os usuários vejam o caminho completo até o item filtrado.
+
+## Tecnologias Utilizadas
+
+- **React** para construção da interface.
+- **CSS Modules** para estilização.
+- **API REST** para obtenção de dados das empresas, assets e localizações.
+
+## Como Rodar o Projeto
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/GuiSelair/tractian-frontend-challenge.git
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+	
+2. Instale as dependências:
+```bash
+npm install
 ```
+3. Inicie o servidor de desenvolvimento:
+```
+npm run dev
+```
+4. Acessa a aplicação em http://localhost:3000
+
+## Contato
+Se você tiver alguma dúvida ou quiser discutir melhorias, fique à vontade para me contatar pelo [LinkedIn](https://www.linkedin.com/in/guilherme-selair/) ou [email](mailto:contato@guilhermeselair.dev).
